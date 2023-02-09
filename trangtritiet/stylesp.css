@@ -1,0 +1,647 @@
+:root {
+    --widthLoggin: 465px;
+    --colorText: black;
+    --titleProduct: 15px;
+    --titleProductColor: #00324E;
+    --sizeTitleProduc: 18px;
+    --fronSize: 'Roboto';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+
+}
+
+body {
+    width: 100%;
+    /* background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%); */
+    height: 3000px;
+}
+
+.container {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    /* background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%); */
+
+    padding: 10px;
+}
+
+header {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    border: 3px solid #000000;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, rgb(255, 255, 255), #86E5FF)
+}
+
+.frames_logo {
+
+    width: 290px;
+    height: 148px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: -21px;
+}
+
+.frames_logo>img {
+    width: 100%;
+    height: 100%;
+    margin: 3px;
+}
+
+.frames_help-login {
+
+    width: 50%;
+    height: 100%;
+
+}
+
+.help-login {
+    /* width: var(--widthLoggin); */
+    position: absolute;
+    right: 22px;
+    top: 0px;
+}
+
+.help-login>ul {
+    display: flex;
+    text-align: center;
+
+}
+
+.help-login>ul>li {
+    list-style: none;
+    width: 155px;
+    margin: 1px 17px;
+    /* border: 1px solid black; */
+}
+
+.help-login>ul>li>a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    font-size: 15px;
+    color: #000000;
+}
+
+.button_login {
+    line-height: 30px;
+    width: 140px;
+    border-radius: 10px;
+    border: inherit;
+    background-color: #4dbeff;
+    cursor: pointer;
+}
+
+.button_login:hover {
+    box-shadow: 0px 5px 5px black;
+}
+
+
+.help-login>ul>li>a:hover {
+    color: rgb(0, 13, 255);
+}
+
+.frames_search {
+    position: absolute;
+    right: 46px;
+    top: 60px;
+
+}
+
+.frames_search::after {
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 30px;
+    background-color: #000000;
+    top: 0px;
+    right: 70px;
+}
+
+.frames_search>input {
+    width: 520px;
+    height: 30px;
+    border-radius: 50px;
+    border: 2px solid black;
+    padding: 0px 78px 0px 19px;
+    font-size: 20px;
+}
+
+.fa-magnifying-glass {
+    position: absolute;
+    top: 9px;
+    left: 92%;
+}
+
+
+
+/* slide show */
+.frames_slideShow-all {
+    width: 100%;
+    display: flex;
+    height: auto;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+.frames_slideShow-sp {
+    width: 60%;
+    /* height: 400px; */
+
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.frames_img-show {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    position: relative;
+
+}
+
+.frames_img-show>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.slideShow_left-right-sp {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    padding: 10px;
+    width: 100%;
+    justify-content: space-between;
+    display: none;
+
+}
+
+
+.fa-caret-left {
+    float: left;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+.fa-caret-right {
+    float: right;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+
+.frames_img-show:hover>.slideShow_left-right-sp {
+    display: block;
+}
+
+.frames_menu-service {
+    width: 35%;
+    height: 400px;
+    /* border: 5px solid black; */
+    background-color: red;
+    border-radius: 15px;
+
+
+}
+
+.frames_menu-service>ul {
+    margin: 25px 20px;
+}
+
+.frames_menu-service>ul>li {
+    width: 100%;
+    border: 1px solid black;
+    margin: 0px 0px 25px 0px;
+    list-style: none;
+    text-align: center;
+    background: #000000;
+}
+
+.frames_menu-service>ul>li:nth-child(1) {
+    border-top-left-radius: 50px;
+}
+
+.frames_menu-service>ul>li:nth-child(5) {
+    border-bottom-right-radius: 50px;
+}
+
+.frames_menu-service>ul>li>a {
+    line-height: 50px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-family: var(--fronSize);
+    color: white;
+}
+
+.frames_menu-service>ul>li>a:hover {
+    color: yellow;
+}
+
+/* end */
+
+/* menu sp */
+
+nav {
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+nav>.menu {
+    background-color: #86E5FF;
+    border-radius: 2px;
+    display: flex;
+    position: relative;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+nav>.menu>ul {
+    display: flex;
+
+}
+
+nav>.menu>ul>.home>a {
+    background-color: rgb(45, 44, 44);
+    color: white;
+
+
+}
+
+nav>.menu>ul>li {
+    position: relative;
+    display: block;
+    list-style: none;
+    text-align: center;
+    width: 200px;
+    border-right: 2px solid black;
+}
+
+nav>.menu>ul>li>a {
+    display: block;
+    text-decoration: none;
+    line-height: 45px;
+    color: black;
+
+}
+
+nav>.menu>ul>li>a:hover {
+    background-color: rgb(45, 44, 44);
+    color: white;
+
+}
+
+/*menu child*/
+
+/* .manu_child{
+    display: none;
+    margin: 3px 0px 0px 0pxx;
+    position:absolute;
+    left: -3px;
+    top:54px;
+    margin-top: 3px;
+    background-color: #9E8E8E;
+    border: 0px solid black;
+
+}
+.manu_child>ul{
+    width: 100%;
+    list-style: none;
+    text-align: center;
+    
+}
+.manu_child>ul>li{
+
+    width: 198px;
+    font-size: var(--sizeTitleProduc);
+}
+.manu_child>ul>li:hover{
+    background-color: white;
+} */
+
+
+
+nav>.menu>ul>li:hover>.menu-child {
+    display: block;
+    z-index: 2;
+}
+
+.menu-child {
+    position: absolute;
+    text-align: justify;
+    display: none;
+    background-color: white;
+    /* border: 2px solid black; */
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+
+
+    width: 200px;
+
+
+}
+
+.menu-child>ul {}
+
+.menu-child>ul>li {
+
+    width: 100%;
+    list-style: none;
+    cursor: pointer;
+
+
+}
+
+.menu-child>ul>li>a:hover {
+    background-color: rgb(45, 44, 44);
+    color: white;
+    text-align: center;
+    box-shadow: 0px 10px 5px black;
+    border-radius: 3px;
+
+
+}
+
+.menu-child>ul>li>a {
+    display: block;
+    text-decoration: none;
+    line-height: 30px;
+    padding-left: 10px;
+    color: black;
+
+
+}
+
+/* end */
+
+
+/* sản phẩm chi tiết  */
+
+article {
+    /* border: 1px solid black; */
+    margin-top: 45px;
+    width: 100%;
+    height: 500px;
+}
+
+.crossbar {
+    position: relative;
+
+}
+
+.crossbar_two>p {
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    color: red;
+    font-family: cursive;
+}
+
+.crossbar_two::after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 0px;
+    width: 44%;
+    height: 4px;
+    background-color: #000000;
+    box-shadow: 0px 5px 5px black;
+}
+
+.crossbar_two::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    right: 0px;
+    width: 44%;
+    height: 4px;
+    background-color: #000000;
+    box-shadow: 0px 5px 5px black;
+
+}
+
+
+
+/* sản phẩm thú cưng */
+.frames_product {
+    margin-top: 50px;
+    padding-left: 5%;
+    width: 100%;
+    display: inline-flex;
+    height: 500px;
+}
+
+
+.frames_product-pet {
+    width: 44.5%;
+    /* border: 1px solid black; */
+
+}
+
+.img_peti-big {
+    width: 100%;
+    height: 400px;
+
+
+}
+
+.img_peti-big>img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 1px;
+    box-shadow: 0px 3px 2px black;
+
+
+}
+
+.img_pet-min {
+    margin-top: 10px;
+
+}
+
+.img_pet-min>img {
+    width: 19.39%;
+    height: 89px;
+    border: 1px solid black;
+    border-radius: 2px;
+    box-shadow: 0px 3px 2px black;
+    cursor: pointer;
+
+
+}
+
+.frames_title-pet {
+    width: 40%;
+    border: 1px solid rgb(188, 138, 138);
+    margin-left: 10%;
+    border-radius: 10px;
+}
+
+.frames_name-pet {
+    background-color: #D9D9D9;
+    ;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+
+
+}
+
+.frames_name-pet>p {
+    line-height: 50px;
+    font-size: 30px;
+    font-family: var(--fronSize);
+    font-weight: bold;
+}
+
+.frames_price {
+    position: relative;
+
+    margin-top: 1px;
+    display: flex;
+    justify-content: space-around;
+    background: rgba(227, 227, 227, 0.2);
+
+}
+
+.frames_price>p {
+    font-size: 25px;
+    line-height: 62px;
+    font-weight: bold;
+}
+
+.frames_price>p:nth-child(1) {
+    color: #f67676;
+}
+
+.frames_price>p:nth-child(1)::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 14%;
+    width: 22%;
+    height: 7%;
+    background-color: #747070;
+}
+
+.frames_price>p:nth-child(2) {
+    color: #FE0000;
+}
+
+/* 
+thông tin về sản phẩm  */
+.frames_title-click {
+    display: flex;
+    width: 100%;
+    padding: 5px 20px;
+}
+
+.frames_title-click-pet {
+    width: 55%;
+    /* border: 1px solid black; */
+    /* height: 300px; */
+
+}
+
+.title_click-pet {
+    display: flex;
+    position: relative;
+    margin: 30px 0px;
+}
+
+.title_click-pet>p {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: var(--fronSize);
+    color: #877878;
+}
+
+.title_pet-gender {
+    margin-left: 40px;
+    font-size: 25px;
+    color: #877878;
+
+}
+
+.title_click-pet-gender {
+    margin-left: 20px;
+}
+
+.title_click-pet-gender>input:nth-child(1) {
+    position: absolute;
+    content: '';
+    top: 8%;
+    /* right: 0px; */
+
+}
+
+.title_click-pet-gender>input:nth-child(2) {
+    position: absolute;
+    content: '';
+    top: 74%;
+    /* right: 0px; */
+
+}
+
+.title_pet-gender>p {
+    font-size: 18px;
+}
+
+.title_pet-gender>p:nth-child(2) {
+    margin-top: 20px;
+}
+
+.munber_pet {
+    width: 50%;
+    margin-left: 20%;
+   
+}
+
+.frames_title-special {
+    margin-left: 5%;
+    margin-top: 35px;
+    width: 40%;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 222px;
+    background-color: white;
+
+    
+}
+
+.frames_title-special-name {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    background-color: #FE0000;
+    text-align: center;
+
+}
+
+.frames_title-special-name>p {
+    line-height: 50px;
+    font-size: 13px;
+}
+.frames_menu-special{
+    margin-left: 12%;
+    /* background-color: white; */
+}
+.frames_menu-special>ul{
+    font-size: 15px;
+}
+.frames_menu-special>ul>li{
+    margin: 6px 0px;
+
+}
+/* end */

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>NGUYEN KHANH HUY</title>
+
+</head>
+
+
+<body>
+    <div class="container">
+        <header>
+            <div class="frames_logo">
+                <img src="./anh/logo/imageedit_0_9428945793.png" alt="" srcset="">
+            </div>
+            <div class="frames_help-login">
+                <div class="help-login">
+                    <ul>
+                        <li><a href="">HỖ TRỢ</a></li>
+                        <li><a href="">TRỢ GIÚP</a></li>
+                        <li><a href="" style="color: rgb(218, 60, 20);">
+                                <button class="button_login">ĐĂNG NHẬP</button></a></li>
+                    </ul>
+                </div>
+
+                <div class="frames_search">
+                    <input type="text" class="search" list="datalists">
+                    <datalist id="datalists">
+                        <option value="Alaska"></option>
+                        <option value="Meo tam the"></option>
+                        <option value="Meo duoi dai"></option>
+                    </datalist>
+                    <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                </div>
+
+            </div>
+
+        </header>
+        <div class="frames_show">
+            <div class="frames_slideShow">
+                <img src="./anh/bander/slide1a.png" id="sideshow-imgs">
+                <div class="slideShow_left-right">
+                    <i class="fa-solid fa-caret-left" onclick="leftSide()"></i>
+                    <i class="fa-solid fa-caret-right" onclick="rightSide()"></i>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="frame_menu">
+            <div class="menu">
+                <ul>
+                    <li><a href=""><i class="fa-solid fa-house"></i>Trang Chủ</a></li>
+                    <li><a href="">Thú Cưng</a>
+                        <div class="manu_child">
+                            <ul>
+                                <li>Con Chó</li>
+                                <li>Con Mèo</li>
+                                <li>Con cá</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href=""></a>Đồ Ăn Thú Cưng
+                        <div class="manu_child">
+                            <ul>
+                                <li>Đồ Chơi Cho Thú Cưng</li>
+                                <li>Đồ Dùng cho thú Cưng</li>
+                                <li>Sữa Tắm cho Thú Cưng</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="">Dụng Cụ Thú Cưng</a></li>
+                </ul>
+            </div>
+        </div> -->
+
+
+
+
+        <nav>
+            <div class="menu">
+                <ul>
+                    <li class="home"><a href="#">Trang Chủ</a></li>
+                    <li><a href="#">Thú Cưng</a>
+                        <div class="menu-child">
+                            <ul>
+                                <li><a href="#">Con Chó</a></li>
+                                <li><a href="#">Con mèo</a></li>
+                                <li><a href="#">Con cá</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Đồ Dùng Thú Cưng</a>
+                        <div class="menu-child">
+                            <ul>
+                                <li><a href="#">Đồ Chơi Cho Thú Cưng</a></li>
+                                <li><a href="#">Dùng cho thú Cưng</a></li>
+                                <li><a href="#">Tắm cho Thú Cưng</a></li>
+
+
+                            </ul>
+                        </div>
+
+                    </li>
+                    <li><a href="#">Thuốc Cho Thú Cưng</a>
+                        <div class="menu-child">
+                            <ul>
+                                <li><a href="#">Thuốc Trị Ve</a></li>
+                                <li><a href="#">Thuốc Trị Mắt</a></li>
+                                <li><a href="#">Thuốc Khử Mùi</a></li>
+
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+
+
+
+        <article>
+            <div class="frames_all-product">
+                <div class="frames_product-title">
+                    <p>
+                        THÚ CƯNG BÁN CHẠY
+                    </p>
+                </div>
+                <div class="frames_product">
+                    <!-- <ul class="frames_product-ul">
+                        <li class="img_product"><img src="./anh/dog/Phoc-Soc.jpg" alt="" srcset=""></li>
+                        <li class="name-title">Phoc Soc</li>
+                    </ul>
+
+                    <ul class="frames_product-ul">
+                        <li class="img_product"><img src="./anh/dog/Pug.jpg" alt="" srcset=""></li>
+                        <li class="name-title">Pug</li>
+                    </ul>
+
+                    <ul class="frames_product-ul">
+                        <li class="img_product"><img src="./anh/dog/Alaska.jpg" alt="" srcset=""></li>
+                        <li class="name-title">Alaska</li>
+                    </ul>
+
+                    <ul class="frames_product-ul">
+                        <li class="img_product"><img src="./anh/dog/Samoyed.jpg" alt="" srcset=""></li>
+                        <li class="name-title">Samoyed</li>
+                    </ul>
+
+                    <ul class="frames_product-ul">
+                        <li class="img_product"><img src="./anh/dog/Husky.jpg" alt="" srcset=""></li>
+                        <li class="name-title">Husky</li>
+                    </ul>
+
+                    <ul class="frames_product-ul">
+                        <li class="img_product"><img src="./anh/cat/Ragdoll.jpg" alt="" srcset=""></li>
+                        <li class="name-title">Ragdoll</li>
+                    </ul>
+
+                    <ul class="frames_product-ul">
+                        <li class="img_product"><img src="./anh/cat/Meo-ba-tu.jpg" alt="" srcset=""></li>
+                        <li class="name-title">Mèo Ba Tư</li>
+                    </ul>
+
+                    <ul class="frames_product-ul">
+                        <li class="img_product"><img src="./anh/cat/Meo-Anh-Long-Ngan.jpg" alt="" srcset=""></li>
+                        <li class="name-title">Anh Lông Ngăn</li>
+                    </ul>
+
+                    <ul class="frames_product-ul">
+                        <li class="img_product"><img src="./anh/cat/meo-scottish-fold.jpg" alt="" srcset=""></li>
+                        <li class="name-title">Scottish Fold</li>
+                    </ul>
+
+                    <ul class="frames_product-ul">
+                        <li class="img_product"><img src="./anh/cat/Maine-coon.jpg" alt="" srcset=""></li>
+                        <li class="name-title">Maine Coon</li>
+                    </ul> -->
+
+                    <script>
+                        var ArrayPet = [
+                            { namePet: 'Phoc Soc', picturePet: './anh/dog/Phoc-Soc.jpg' },
+                            { namePet: 'dog', picturePet: './anh/dog/Pug.jpg' },
+                            { namePet: 'Alaska', picturePet: 'anh/dog/Alaska.jpg' },
+                            { namePet: 'Samoyed', picturePet: './anh/dog/Samoyed.jpg' },
+                            { namePet: 'Husky', picturePet: './anh/dog/Husky.jpg' },
+                            { namePet: 'Ragdoll', picturePet: './anh/cat/Ragdoll.jpg' },
+                            { namePet: 'Mèo Ba Tư', picturePet: './anh/cat/Meo-ba-tu.jpg' },
+                            { namePet: 'Anh Lông Ngăn', picturePet: './anh/cat/Meo-Anh-Long-Ngan.jpg' },
+                            { namePet: 'Scottish Fold', picturePet: './anh/cat/meo-scottish-fold.jpg' },
+                            { namePet: 'Maine Coon', picturePet: './anh/cat/Maine-coon.jpg' },
+
+                        ]
+
+                        function pet() {
+                            for (var i = 0; i < ArrayPet.length; i++) {
+                                var sp = ArrayPet[i]
+                                var namePet = sp.namePet
+                                var imgPet = sp.picturePet
+                                document.write(`
+                            
+                                <ul class="frames_product-ul">
+                                    <li><div class="frames_order">Đặt Hàng</div></li>
+                                                    <li class="img_product"><img src="${imgPet}" alt="" srcset=""></li>
+                                                    <li class="name-title">${namePet}</li>
+                                                </ul>
+                                            `)
+                            }
+                        }
+                        pet();
+                    </script>
+                </div>
+
+
+            </div>
+
+            <div class="frames_all-product">
+                <div class="frames_product-title">
+                    <p>
+                        ĐỒ DÙNG THÚ CƯNG
+                    </p>
+                </div>
+                <div class="frames_products-pet">
+
+
+                    <script>
+                        var ArrayBelongings = [
+                            { nameBelongings: 'Cần câu cá', pictureBelongings: './anh/đồ chơi thú cưng/can-cau-afp-dreams-catcher-ranga-1-300x300.jpg' },
+                            { nameBelongings: 'Xịt khử mùi', pictureBelongings: './anh/đồ chơi thú cưng/xit-khu-mui-moi-truong-va-cho-meo-bioline-deodorizing-1-300x300.jpg' },
+                            { nameBelongings: 'Sữa Tắm', pictureBelongings: './anh/đồ chơi thú cưng/sua-tam-cho-cho-meo-ngan-ngua-ve-beaphar-bio-300x300.jpg' },
+                            { nameBelongings: 'Khây Thức Ăn', pictureBelongings: './anh/đồ chơi thú cưng/chen-nhua-mon-ami-bowl-1-300x300.jpg' },
+                            { nameBelongings: 'Cần câu cho thú cưng', pictureBelongings: './anh/đồ chơi thú cưng/can-cau-ca-do-choi-mon-ami-toy-cat-1-300x300.jpg' },
+
+
+                        ]
+
+                        function pet() {
+                            for (var i = 0; i < ArrayBelongings.length; i++) {
+                                var sp = ArrayBelongings[i]
+                                var nameBelongings = sp.nameBelongings
+                                var imgBelongings = sp.pictureBelongings
+                                document.write(`
+                                <ul class="frames_product-ul-pet">
+                        <li><div class="frames_order-pet">Mua Ngay</div></li>
+                        <li class="img_product-pet"><img
+                                src="${imgBelongings}"
+                                alt="" srcset=""></li>
+                        <li class="name-title_pet">${nameBelongings}</li>
+                    </ul>`)
+                            }
+                        }
+                        pet();
+                    </script>
+
+                </div>
+            </div>
+
+
+
+            <div class="frames_all-product">
+                <div class="frames_product-title">
+                    <p>
+                        THUỐC CHO THÚ CƯNG
+                    </p>
+                </div>
+                <div class="frames_products">
+
+                    <script>
+                        var ArrayBelongings = [
+                            { nameBelongings: 'Thuốc vệ sinh mắt cho thú cưng', pictureBelongings: './anh/thuốc cho cún/thuoc-ve-sinh-mat-cho-cho-meo-bioline-tear-stain-remover-300x300.jpg' },
+                            { nameBelongings: 'Xịt khử mùi', pictureBelongings: './anh/đồ chơi thú cưng/xit-khu-mui-moi-truong-va-cho-meo-bioline-deodorizing-1-300x300.jpg' },
+                            { nameBelongings: 'Thuốc trị ghẻ cho thú cưng', pictureBelongings: './anh/thuốc cho cún/thuoc-tri-ghe-nam-cho-cho-meo-alkin-mitecyn1-400x400.jpg' },
+                            { nameBelongings: 'Thuốc trị ve cho chó mèo', pictureBelongings: './anh/thuốc cho cún/thuoc-xit-tri-ve-ran-cho-cho-meo-merial-frontline-spray-treatment-400x400.jpg' },
+                            { nameBelongings: 'Vòng cỗ trị ve cho chó mèo', pictureBelongings: './anh/thuốc cho cún/vong-co-tri-ve-ran-cho-meo-bioline-flea-and-tick-collar-for-cats-400x400.jpg' },
+
+
+                        ]
+
+                        function pet() {
+                            for (var i = 0; i < ArrayBelongings.length; i++) {
+                                var sp = ArrayBelongings[i]
+                                var nameBelongings = sp.nameBelongings
+                                var imgBelongings = sp.pictureBelongings
+                                document.write(`
+                                <ul class="frames_product-ul-pet">
+                        <li><div class="frames_order-pet">Mua Ngay</div></li>
+                        <li class="img_product-pet"><img
+                                src="${imgBelongings}"
+                                alt="" srcset=""></li>
+                        <li class="name-title_pet">${nameBelongings}</li>
+                    </ul>`)
+                            }
+                        }
+                        pet();
+                    </script>
+
+                </div>
+            </div>
+
+        </article>
+        <footer>
+            <div class="connect">
+                <div class="connect_title footer_all ">
+                    <p>KẾT NỐI</p>
+                </div>
+                <ul class="footer_ul ">
+                    <li class="footer_li"><i class="fa-brands fa-facebook"></i> <a href="">facebook.com/chomeo</a> </li>
+                    <li class="footer_li"><i class="fa-brands fa-tiktok"></i> <a href="">tiktok.com/chomeo</a> </li>
+                    <li class="footer_li"><i class="fa-brands fa-instagram"></i> <a href="">instagram.com/chomeo</a>
+                    </li>
+                    <li class="footer_li"><i class="fa-brands fa-youtube"></i> <a href="">youtube.com/chomeo</a></li>
+                </ul>
+            </div>
+
+
+            <div class="contact">
+                <div class="contact_title footer_all ">
+                    <p>LIÊN HỆ</p>
+                </div>
+                <ul class="footer_ul">
+                    <li class="footer_li"><i class="fa-solid fa-phone"></i> Hỗ trợ: <span>1800.0002</span></li>
+                    <li class="footer_li"><i class="fa-solid fa-phone"></i> Khiếu nại: <span>1800.0001</span></li>
+                </ul>
+            </div>
+
+            <div class="address">
+                <div class="address_title footer_all ">
+                    <p>ĐỊA CHỈ</p>
+                </div>
+                <ul class="footer_ul">
+                    <li class="footer_li">Tòa nhà QTSC9 (toà T), đường Tô Ký,
+                        phườngTân Chánh Hiệp, quận 12,
+                        TP HCM</li>
+                </ul>
+            </div>
+        </footer>
+
+
+    </div>
+</body>
+<script src="./main.js"></script>
+
+</html>
